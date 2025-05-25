@@ -1,7 +1,7 @@
 
 import Icon1 from ".././assets/images/categories/Icon1.jpg";
 import Icon2 from ".././assets/images/categories/Icon2.jpg";
-import Icon3 from ".././assets/images/categories/Icon3.png";
+import Icon3 from ".././assets/images/categories/icon3.png";
 import Icon4 from ".././assets/images/categories/Icon4.jpg";
 import Icon5 from ".././assets/images/categories/Icon5.jpg";
 import Icon6 from ".././assets/images/categories/Icon6.jpg";
