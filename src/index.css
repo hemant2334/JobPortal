@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("/Fonts/TTF/ClashDisplay-Variable.ttf");
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+
+  @apply overflow-x-hidden bg-white selection:bg-primaryColor selection:text-blue-50;
+}
+@layer base {
+  .nav-link {
+    @apply text-base font-medium  leading-[25.6px] text-textGrayColor py-2 px-2 h-full inline-block hover:text-primaryColor transition ease-in-out duration-300;
+  }
+  .primary-btn {
+    @apply py-[10px] px-5 text-base text-center bg-primaryColor hover:bg-primaryColor/90 transition duration-300 hover:scale-[0.97] text-blue-50 font-bold rounded-md;
+  }
+}
+button {
+  user-select: none;
+}
+/* lenis CSS  */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+.slick-slide > div {
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22currentColor%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M6 9l6 6 6-6%22/%3E%3C/svg%3E');
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  padding-right: 2.5em; /* Adjust this to control the space for the arrow */
+}
